@@ -13,7 +13,10 @@ keyboardButtons.forEach(button => {
             inputField.value += ' ';
         } else if (buttonText === "Shift" || buttonText === "Alt" || buttonText === "Alt Gr" || buttonText === "Fn" || buttonText === "Ctrl" || buttonText === "CapsLock" || buttonText === "Win" || buttonText === "Tab") {
             return;
-        }
+        }else if (buttonText === "Reset") {
+            // Reset the input field if "Reset" is clicked
+            inputField.value = '';
+        } 
         else {
             inputField.value += buttonText;
         }
