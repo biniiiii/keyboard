@@ -11,10 +11,9 @@ keyboardButtons.forEach(button => {
             inputField.value += '\n';
         } else if (buttonText === "Space") {
             inputField.value += ' ';
-        } else if (buttonText === "Shift" || buttonText === "Alt" || buttonText === "Alt Gr" || buttonText === "Fn" || buttonText === "Ctrl" || buttonText === "CapsLock" || buttonText === "Win" || buttonText === "Tab") {
+        } else if (buttonText === "Shift" || buttonText === "Alt" || buttonText === "Alt Gr" || buttonText === "Fn" || buttonText === "Ctrl" || buttonText === "CapsLock" || buttonText === "Win") {
             return;
         }else if (buttonText === "Reset") {
-            // Reset the input field if "Reset" is clicked
             inputField.value = '';
         } 
         else {
